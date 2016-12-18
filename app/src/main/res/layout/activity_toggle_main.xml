@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_settings_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/toggleLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/settings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    android:paddingStart="8dp"
+                    android:text="@string/settings"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/srgbText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/settings"
+                    android:paddingLeft="8dp"
+                    android:paddingStart="8dp"
+                    android:text="@string/srgb_mode"
+                    android:textSize="16sp"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/toggleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/srgbText"
+                    android:paddingLeft="8dp"
+                    android:paddingStart="8dp"
+                    android:text="@string/toggle"
+                    android:textSize="14sp"
+                    android:typeface="sans" />
+
+                <Switch
+                    android:id="@+id/srgb_toggle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/toggleLayout"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/about"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    android:paddingStart="8dp"
+                    android:text="@string/about"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/versionText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/about"
+                    android:paddingLeft="8dp"
+                    android:paddingStart="8dp"
+                    android:text="@string/srgb_toggle_version"
+                    android:textSize="16sp"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/versionValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/versionText"
+                    android:paddingLeft="8dp"
+                    android:paddingStart="8dp"
+                    android:text="@string/version"
+                    android:textSize="14sp"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/developerText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/versionValue"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="8dp"
+                    android:paddingStart="8dp"
+                    android:text="@string/developer"
+                    android:textSize="16sp"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/developerValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/developerText"
+                    android:paddingLeft="8dp"
+                    android:paddingStart="8dp"
+                    android:text="@string/samme_kleijn"
+                    android:textSize="14sp"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/github"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/developerValue"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="8dp"
+                    android:paddingStart="8dp"
+                    android:text="@string/github"
+                    android:textSize="16sp"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/githubValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/github"
+                    android:paddingLeft="8dp"
+                    android:paddingStart="8dp"
+                    android:text="@string/sammekl"
+                    android:textSize="14sp"
+                    android:typeface="sans" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
+
